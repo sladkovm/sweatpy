@@ -92,8 +92,14 @@ ENV/
 *.swp
 *.swo
 
+#vscode
+.vscode/
+
 # MacOS
 .DS_Store
 
 #PyCharm
 .idea
+
+Pipfile
+Pipfile.lock
