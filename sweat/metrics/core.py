@@ -26,7 +26,7 @@ def mask_fill(y, mask=None, value=0.0):
         return y
 
     mask = np.array(mask, dtype=bool)
-    y[~mask] = value
+    y[np.invert(mask)] = value
 
     return y
 
@@ -200,7 +200,7 @@ def time_in_zones(y, **kwargs):
     Parameters
     ----------
     y : ndarray, power or heartrate
-    kwargs : see zones
+    kwargs : see compute_zones
 
     Returns
     -------
