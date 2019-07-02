@@ -6,8 +6,8 @@ VALIDATION_COLUMNS = ['time', 'power', 'heartrate', 'cadence', 'speed']
 
 COLUMN_DTYPES = {
         'time': np.int,
-        'power': np.int,
-        'heartrate': np.int,
+        'power': np.int64,
+        'heartrate': np.int64,
         'cadence': np.int,
         'speed': np.int}
 
